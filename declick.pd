@@ -1,0 +1,19 @@
+#N canvas 519 111 616 543 10;
+#X obj 409 168 line;
+#X obj 406 61 inlet control;
+#X obj 289 59 inlet~ sig;
+#X obj 313 219 *~;
+#X obj 314 299 outlet~;
+#X text 75 27 add very short fade in/out to prevent clicks when turning
+signal on or off;
+#X msg 407 123 \$1 20;
+#X obj 410 252 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 407 205 pow;
+#X connect 0 0 8 0;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 6 0 0 0;
+#X connect 8 0 3 1;
+#X connect 8 0 7 0;

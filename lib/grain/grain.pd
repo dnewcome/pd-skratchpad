@@ -1,0 +1,8 @@
+#N canvas 590 181 604 528 10;
+#X obj 237 190 timestretch_RT;
+#X obj 242 106 adc~;
+#X obj 255 300 dac~;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 0 0;
+#X connect 1 1 0 0;
